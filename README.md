@@ -1,2 +1,2 @@
-# Temporary Memory Allocator
-The user can allocate a large pool of memory from the heap at startup and then allocate from the pool as needed. The memory allocation happens only once, obviating the need for subsequent calls to the OS.
+# Memory Arena Allocator
+This simple allocator reserves a large memory block at startup for subsequent use. The upfront allocation eliminates the overhead and potential bottlenecks of frequent memory requests and releases during program execution.
